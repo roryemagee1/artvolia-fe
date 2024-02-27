@@ -1,0 +1,11 @@
+footer {
+  height: 10vh;
+  width: 100vw;
+
+  background-color: grey;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: end;
+}
