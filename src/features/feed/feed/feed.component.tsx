@@ -4,10 +4,10 @@ import './feed.css';
 import FeedTile from '@src/features/feed/feed-tile/feed-tile.component.tsx';
 
 export default function Feed(): JSX.Element {
-  const testArray: any[] = Array(64)
+  const testArray: number[] = Array(64)
   for (let i: number = 0; i < testArray.length; i++) { testArray[i] = i}
   console.log(testArray);
-  const outputArray: JSX.Element[] = testArray.map((tile => <FeedTile key={tile}/>))
+  const outputArray: JSX.Element[] = testArray.map((tile: number): JSX.Element => <FeedTile key={tile}/>)
   
   return (
     <section>
