@@ -1,0 +1,9 @@
+.tile-nav {
+  max-height: 100px;
+  width: 300px;
+  background-color: white;
+}
+
+.tile-nav > button {
+  margin: 0 10px;
+}

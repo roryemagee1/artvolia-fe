@@ -7,6 +7,7 @@ import Feed from "@src/features/feed/feed/feed.component.tsx";
 function Dashboard(): JSX.Element {
   return (
     <>
+      <h1>Post/Filter/Search</h1>
       <Feed />
     </>
   )

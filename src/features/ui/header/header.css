@@ -1,4 +1,4 @@
-header {
+.page-header {
   height: 10vh;
   width: 100vw;
   position: fixed;
@@ -9,9 +9,9 @@ header {
   background-color: grey;
 }
 
-nav {
+.header-nav {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

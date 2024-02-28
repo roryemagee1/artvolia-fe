@@ -11,11 +11,11 @@ export default function Feed(): JSX.Element {
   
   return (
     <section>
-      <h1>Post/Filter/Search</h1>
+      <div className="page-gap"/>
       <ul className="tile-grid">
           {outputArray}
       </ul>
-      <div className="footer-gap"/>
+      <div className="page-gap"/>
     </section>
   )
 }
