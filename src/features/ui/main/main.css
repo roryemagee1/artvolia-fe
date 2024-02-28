@@ -1,11 +1,18 @@
 main {
-  height: 80vh;
+  min-height: 80vh;
   width: 100vw;
+  position: absolute;
+  top: 10vh;
+  left: 0;
 
-  background-color: lightgrey;
+  background: linear-gradient(lightgrey, #ff0000);
 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: start;
+}
+
+main > h1 {
+  position: fixed;
 }
