@@ -1,6 +1,39 @@
 .feed-tile {
-  max-height: 400px;
-  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.feed-tile > div {
   background-color: white;
   padding: 20px 10px;
+  
 }
+
+.feed-tile > div > img {
+  max-height: 300px;
+}
+
+@media (width < 1440px) {
+  .feed-tile > div > img {
+    max-height: 25vw;
+  }
+}
+
+
+@media (width < 1080px) {
+  .feed-tile > div > img {
+    max-height: 35vw;
+  }
+}
+
+@media (width < 720px) {
+  .feed-tile > div > img {
+    max-height: 50vw;
+    min-height: 240px;
+  }
+}
+
+
+
+
+

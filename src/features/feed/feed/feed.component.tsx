@@ -10,12 +10,12 @@ export default function Feed(): JSX.Element {
   const outputArray: JSX.Element[] = testArray.map((tile: number): JSX.Element => <FeedTile key={tile}/>)
   
   return (
-    <section>
-      <div className="page-gap"/>
-      <ul className="tile-grid">
+    <section className="feed">
+      <div className="feed--page-gap"/>
+      <ul className="feed--tile-grid">
           {outputArray}
       </ul>
-      <div className="page-gap"/>
+      <div className="feed--page-gap"/>
     </section>
   )
 }

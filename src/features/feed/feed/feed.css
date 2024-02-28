@@ -1,52 +1,59 @@
-section {
+.feed {
   min-height: 80vh;
   width: 80vw;
   background-color: lightgrey;
 }
 
-.page-gap {
-  height: 10vh;
-  width: 100vw;
-}
-
-.tile-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-}
-
-@media (min-width: 360px) {
-  .tile-grid {
-    grid-template-columns: repeat(1, 1fr);
+@media (width < 600px) {
+  .feed {
+    width: 100vw;
   }
 }
 
-@media (min-width: 720px) {
-  .tile-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1080px) {
-  .tile-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1440px) {
-  .tile-grid {
-    grid-template-columns: repeat(4, 1fr);
+@media (min-width: 1240px) {
+  .feed {
+    width: 85vw;
   }
 }
 
 @media (min-width: 1800px) {
-  .tile-grid {
-    grid-template-columns: repeat(5, 1fr);
+  .feed {
+    width: 90vw;
+  }
+}
+
+.feed--page-gap {
+  height: 10vh;
+  width: 80vw;
+}
+
+.feed--tile-grid {
+  min-width: 360px;
+  display: grid;
+  grid-gap: 10px;
+  padding: 0 40px;
+}
+
+@media (min-width: 360px) {
+  .feed--tile-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (min-width: 1080px) {
+  .feed--tile-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1440px) {
+  .feed--tile-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 2160px) {
-  .tile-grid {
-    grid-template-columns: repeat(6, 1fr);
+  .feed--tile-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
