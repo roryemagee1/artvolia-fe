@@ -1,18 +1,20 @@
 import { JSX } from 'react';
-import './app.css'
+import './app.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from '@src/features/ui/header/header.component.tsx';
 import Main from '@src/features/ui/main/main.component.tsx';
 import Footer from '@src/features/ui/footer/footer.component.tsx';
 
-function App(): JSX.Element {
+import Dashboard from '@src/pages/dashboard/dashboard.component.tsx';
+
+export default function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Header />
       <Main>
         <Routes>
-          <Route path="/" element={<h1>Dashboard</h1>}/>
+          <Route path="/" element={<Dashboard />}/>
           <Route path="/posts" element={<h1>Posts</h1>}/>
           <Route path="/profile" element={<h1>Profile</h1>}/>
           <Route path="/settings" element={<h1>Settings</h1>}/>
@@ -23,5 +25,3 @@ function App(): JSX.Element {
     </BrowserRouter>
   )
 }
-
-export default App

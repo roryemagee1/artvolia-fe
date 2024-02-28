@@ -1,0 +1,16 @@
+section {
+  min-height: 80vh;
+  width: 80vw;
+  background-color: lightgrey;
+}
+
+.tile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.footer-gap {
+  height: 10vh;
+  width: 100vw;
+}
