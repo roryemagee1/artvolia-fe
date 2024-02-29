@@ -19,9 +19,7 @@ interface FeedTileProps {
 export default function FeedTile({ userID, postID, imgSrc, imgAlt, height, postText, likes }: FeedTileProps): JSX.Element {
   const style: CSSProperties = {
     height: `${height}px`,
-  }
-  console.log(height)
-  
+  } 
   
   return (
     
