@@ -15,7 +15,7 @@ export default function Feed(): JSX.Element {
           postID={1}
           imgSrc={butterfly}
           imgAlt="butterfly"
-          width={300}
+          height={null /*(number | null)*/}
           postText="This is my favorite picture!"
           likes={17}
           /*

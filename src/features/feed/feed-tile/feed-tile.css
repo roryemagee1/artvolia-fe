@@ -28,14 +28,14 @@ p {
 }
 
 @media (width < 1440px) {
-  .feed-tile > div > img {
+  .feed-tile > div > a >img {
     max-height: 25vw;
   }
 }
 
 
 @media (width < 1080px) {
-  .feed-tile > div > img {
+  .feed-tile > div > a > img {
     max-height: 50vw;
     min-height: 240px;
   }
