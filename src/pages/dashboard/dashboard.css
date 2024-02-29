@@ -1,0 +1,9 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard > h1 {
+  position: fixed;
+  z-index: 2;
+}

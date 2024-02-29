@@ -12,7 +12,3 @@ main {
   justify-content: center;
   align-items: start;
 }
-
-main > h1 {
-  position: fixed;
-}

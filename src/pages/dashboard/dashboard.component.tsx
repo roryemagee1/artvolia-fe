@@ -6,9 +6,9 @@ import Feed from '@src/features/feed/feed/feed.component.tsx';
 
 export default function Dashboard(): JSX.Element {
   return (
-    <>
+    <div className="dashboard">
       <h1>Post/Filter/Search</h1>
       <Feed />
-    </>
+    </div>
   )
 }
