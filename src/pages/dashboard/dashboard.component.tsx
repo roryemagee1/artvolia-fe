@@ -2,9 +2,9 @@ import { JSX } from 'react';
 import './dashboard.css'
 // import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Feed from "@src/features/feed/feed/feed.component.tsx";
+import Feed from '@src/features/feed/feed/feed.component.tsx';
 
-function Dashboard(): JSX.Element {
+export default function Dashboard(): JSX.Element {
   return (
     <>
       <h1>Post/Filter/Search</h1>
@@ -12,5 +12,3 @@ function Dashboard(): JSX.Element {
     </>
   )
 }
-
-export default Dashboard;

@@ -1,0 +1,9 @@
+.view {
+  height: 90vh;
+  width: 100%;
+
+  background-color: lightblue;
+
+  display: flex;
+  flex-direction: column;
+}

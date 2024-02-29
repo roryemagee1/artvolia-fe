@@ -7,6 +7,7 @@ import Main from '@src/features/ui/main/main.component.tsx';
 import Footer from '@src/features/ui/footer/footer.component.tsx';
 
 import Dashboard from '@src/pages/dashboard/dashboard.component.tsx';
+import Posted from '@src/pages/posted/posted.component.tsx';
 
 export default function App(): JSX.Element {
   return (
@@ -15,7 +16,7 @@ export default function App(): JSX.Element {
       <Main>
         <Routes>
           <Route path="/" element={<Dashboard />}/>
-          <Route path="/posts" element={<h1>Posts</h1>}/>
+          <Route path="/posted" element={<Posted />}/>
           <Route path="/profile" element={<h1>Profile</h1>}/>
           <Route path="/settings" element={<h1>Settings</h1>}/>
           <Route path="/login" element={<h1>Login</h1>}/>
