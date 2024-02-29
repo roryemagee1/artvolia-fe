@@ -15,7 +15,7 @@ p {
   position: relative;
 }
 
-.feed-tile > div > img {
+.feed-tile > div > a > img {
   max-height: 300px;
 }
 

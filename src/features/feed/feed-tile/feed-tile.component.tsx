@@ -22,15 +22,17 @@ export default function FeedTile({ userID, postID, imgSrc, imgAlt, width, postTe
   }
   
   return (
-    <NavLink to={`/posted/${userID}/${postID}`}>
+    
       <li className="feed-tile">
         <div>
           <TileHeader />
-          <img src={imgSrc} alt={imgAlt} style={style}/>
-          <p>{postText}</p>
-          <TileNav likes={likes}/>
+          <NavLink to={`/posted/${userID}/${postID}`}>
+            <img src={imgSrc} alt={imgAlt} style={style}/>
+            <p>{postText}</p>
+          </NavLink>
+          <TileNav likes={likes} userID={userID} postID={postID}/>
         </div>
       </li>
-     </NavLink>
+     
   )
 }

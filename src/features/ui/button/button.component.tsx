@@ -1,12 +1,13 @@
-import { JSX } from 'react';
+import { JSX , MouseEvent} from 'react';
 import './button.css';
 
 interface ButtonProps {
   children: JSX.Element;
+  onClick?: (e: MouseEvent<HTMLButtonElement>) => void;
 }
-export default function Button({ children }: ButtonProps) {
+export default function Button({ children, onClick }: ButtonProps) {
   return (
-    <button>
+    <button onClick={onClick}>
       {children}
     </button>
   )
