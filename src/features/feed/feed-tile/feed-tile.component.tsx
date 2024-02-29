@@ -1,19 +1,36 @@
-import { JSX } from 'react';
+import { JSX, CSSProperties } from 'react';
+import { NavLink } from 'react-router-dom';
 import './feed-tile.css';
-import butterfly from '@src/assets/butterfly.png';
 
 import TileNav from '@src/features/feed/tile-nav/tile-nav.component.tsx';
 import TileHeader from '@src/features/feed/tile-header/tile-header.component.tsx';
 
-export default function FeedTile(): JSX.Element {
+interface FeedTileProps {
+  key: number;
+  userID: number;
+  postID: number;
+  imgSrc: string;
+  imgAlt: string;
+  width: (number | null);
+  postText: string;
+  likes: number;
+}
+
+export default function FeedTile({ userID, postID, imgSrc, imgAlt, width, postText, likes }: FeedTileProps): JSX.Element{
+  const style: CSSProperties = {
+    width: `${width}`,
+  }
+  
   return (
-    <li className="feed-tile">
-      <div>
-        <TileHeader />
-        <img src={butterfly} alt="butterfly"/>
-        <p>This is my favorite picture of a butterfly!</p>
-        <TileNav />
-      </div>
-    </li>
+    <NavLink to={`/posted/${userID}/${postID}`}>
+      <li className="feed-tile">
+        <div>
+          <TileHeader />
+          <img src={imgSrc} alt={imgAlt} style={style}/>
+          <p>{postText}</p>
+          <TileNav likes={likes}/>
+        </div>
+      </li>
+     </NavLink>
   )
 }

@@ -1,5 +1,6 @@
 import { JSX } from 'react';
 import './feed.css';
+import butterfly from '@src/assets/butterfly.png';
 
 import FeedTile from '@src/features/feed/feed-tile/feed-tile.component.tsx';
 
@@ -10,14 +11,17 @@ export default function Feed(): JSX.Element {
       return (
         <FeedTile 
           key={tile}
+          userID={1}
+          postID={1}
+          imgSrc={butterfly}
+          imgAlt="butterfly"
+          width={300}
+          postText=""
+          likes={17}
           /*
-          Data Needed:
-          userID
-          postID
-          imgSrc
-          imgAlt
-          postText
-          likes
+          Props needed:
+          height?
+          adjustDimensions()
           */
         />
       )
