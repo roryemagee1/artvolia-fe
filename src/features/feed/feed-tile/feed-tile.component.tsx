@@ -7,12 +7,13 @@ import TileHeader from '@src/features/feed/tile-header/tile-header.component.tsx
 
 export default function FeedTile(): JSX.Element {
   return (
-    <div className="feed-tile">
+    <li className="feed-tile">
       <div>
         <TileHeader />
         <img src={butterfly} alt="butterfly"/>
+        <p>This is my favorite picture of a butterfly!</p>
         <TileNav />
       </div>
-    </div>
+    </li>
   )
 }

@@ -4,10 +4,24 @@ import './feed.css';
 import FeedTile from '@src/features/feed/feed-tile/feed-tile.component.tsx';
 
 export default function Feed(): JSX.Element {
-  const testArray: number[] = Array(0)
-  for (let i: number = 0; i < testArray.length; i++) { testArray[i] = i}
-  const outputArray: JSX.Element[] = testArray.map((tile: number): JSX.Element => <FeedTile key={tile}/>)
-  console.log(outputArray);
+  const TESTARRAY: number[] = Array(64)
+  for (let i: number = 0; i < TESTARRAY.length; i++) { TESTARRAY[i] = i}
+  const outputArray: JSX.Element[] = TESTARRAY.map((tile: number): JSX.Element => {
+      return (
+        <FeedTile 
+          key={tile}
+          /*
+          Data Needed:
+          userID
+          imgSrc
+          imgAlt
+          postText
+          likes
+          */
+        />
+      )
+    }
+  )
 
   if (outputArray.length === 0) {
     return (
@@ -21,9 +35,9 @@ export default function Feed(): JSX.Element {
   return (
     <section className="feed">
       <div className="feed--page-gap"/>
-      <ul className="feed--tile-grid">
-          {outputArray}
-      </ul>
+        <ul className="feed--tile-grid">
+            {outputArray}
+        </ul>
       <div className="feed--page-gap"/>
     </section>
   )
