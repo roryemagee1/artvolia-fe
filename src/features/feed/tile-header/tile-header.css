@@ -1,0 +1,15 @@
+.tile-header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 20%);
+  position: absolute;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+
+  margin: -20px -10px;
+}
+
+.tile-header > button {
+  margin: 0px;
+}

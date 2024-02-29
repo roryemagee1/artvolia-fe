@@ -1,19 +1,20 @@
 .feed-tile {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .feed-tile > div {
   background-color: white;
   padding: 20px 10px;
-  
+  position: relative;
 }
 
 .feed-tile > div > img {
   max-height: 300px;
 }
 
-@media (width < 1440px) {
+/* @media (width < 1440px) {
   .feed-tile > div > img {
     max-height: 25vw;
   }
@@ -31,7 +32,7 @@
     max-height: 50vw;
     min-height: 240px;
   }
-}
+} */
 
 
 
