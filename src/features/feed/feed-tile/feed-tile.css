@@ -12,7 +12,13 @@ p {
 .feed-tile > div {
   background-color: white;
   padding: 20px 10px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.feed-tile > div > a {
+  text-decoration: none;
 }
 
 .feed-tile > div > a > img {

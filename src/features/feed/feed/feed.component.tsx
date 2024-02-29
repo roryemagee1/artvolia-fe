@@ -16,7 +16,7 @@ export default function Feed(): JSX.Element {
           imgSrc={butterfly}
           imgAlt="butterfly"
           width={300}
-          postText=""
+          postText="This is my favorite picture!"
           likes={17}
           /*
           Props needed:

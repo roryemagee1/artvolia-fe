@@ -1,5 +1,5 @@
 import { JSX, CSSProperties } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 import './feed-tile.css';
 
 import TileNav from '@src/features/feed/tile-nav/tile-nav.component.tsx';
