@@ -13,6 +13,7 @@ export default function Feed(): JSX.Element {
           /*
           Data Needed:
           userID
+          postID
           imgSrc
           imgAlt
           postText

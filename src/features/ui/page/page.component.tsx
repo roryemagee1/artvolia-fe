@@ -1,10 +1,10 @@
 // import React from 'react';
-import './main.css';
+import './page.css';
 
 interface ButtonProps {
   children: JSX.Element;
 }
-export default function Footer({ children }: ButtonProps) {
+export default function Page({ children }: ButtonProps) {
   return (
     <main>
       {children}
