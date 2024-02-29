@@ -2,8 +2,10 @@
   height: 90vh;
   width: 100%;
 
-  background-color: lightblue;
+  background-image: url('@src/assets/art-exhibit.jpeg');
+  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }

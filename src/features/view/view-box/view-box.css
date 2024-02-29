@@ -1,0 +1,22 @@
+.view-box {
+  padding: 0 20% 0 0;
+}
+
+.easel {
+  height: 38vw;
+  width: 100%;
+  min-height: 400px;
+  min-width: 400px;
+  max-height: 560px;
+
+  background-image: url('@src/assets/easel2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  padding: 50px 15% 200px 10%;
+}
+
+.easel > img {
+  height: 33vw;
+  max-height: 500px;
+}
