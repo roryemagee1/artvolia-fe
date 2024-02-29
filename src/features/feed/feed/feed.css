@@ -1,6 +1,6 @@
 .feed {
   min-height: 80vh;
-  width: 80vw;
+  width: 90vw;
   background-color: lightgrey;
 }
 
@@ -12,13 +12,13 @@
 
 @media (min-width: 1240px) {
   .feed {
-    width: 85vw;
+    width: 95vw;
   }
 }
 
 @media (min-width: 1800px) {
   .feed {
-    width: 90vw;
+    width: 92.5vw;
   }
 }
 
