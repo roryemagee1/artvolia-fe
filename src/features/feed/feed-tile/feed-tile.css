@@ -14,7 +14,9 @@ p {
   padding: 20px 10px;
   display: flex;
   flex-direction: column;
-  /* position: relative; */
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
 
 .feed-tile > div > a {
