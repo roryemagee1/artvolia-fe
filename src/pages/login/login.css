@@ -2,7 +2,9 @@
   width: 100vw;
   height: 90vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: start;
+  padding: 200px 0 0 0;
 
   background-image: url('@src/assets/art-exhibit.jpeg');
   background-repeat: no-repeat;
