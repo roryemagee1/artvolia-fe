@@ -22,6 +22,7 @@ export default function App(): JSX.Element {
           <Route index element={<LoginForm />} />
           <Route path="/login/sign-up"element={<SignUpForm />} />
         </Route>
+        <Route path="*" element={<h1>Page Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   )
