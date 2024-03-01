@@ -1,12 +1,13 @@
 import { JSX } from 'react';
 import './view.css'
-
-import ViewArea from '@src/features/view/view-area/view-area.component'
+import butterfly from '@src/assets/butterfly.png';
 
 export default function View(): JSX.Element {
   return (
-    <section className="view">
-      <ViewArea />
-    </section>
+    <div className="view">
+      <div className="easel">
+        <img src={butterfly} alt="butterfly"/>
+      </div>
+    </div>
   )
 }

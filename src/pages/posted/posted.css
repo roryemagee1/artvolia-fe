@@ -3,3 +3,9 @@
   display: flex;
   justify-content: flex-end;
 }
+
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
