@@ -1,11 +1,10 @@
 import { JSX } from 'react';
-import './view-box.css'
+import './view-area.css'
 import butterfly from '@src/assets/butterfly.png';
-// import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-export default function ViewBox(): JSX.Element {
+export default function ViewArea(): JSX.Element {
   return (
-    <div className="view-box">
+    <div className="view-area">
       <div className="easel">
         <img src={butterfly} alt="butterfly"/>
       </div>
