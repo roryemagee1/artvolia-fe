@@ -8,4 +8,11 @@
 
   background-image: url('@src/assets/art-exhibit.jpeg');
   background-repeat: no-repeat;
+  background-size: 170vh;
+}
+
+@media (min-width: 1440px) {
+  .login {
+    background-size: 100vw;
+  }
 }

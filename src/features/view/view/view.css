@@ -9,3 +9,9 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media (min-width: 1440px) {
+  .view {
+    background-size: 100vw;
+  }
+}
