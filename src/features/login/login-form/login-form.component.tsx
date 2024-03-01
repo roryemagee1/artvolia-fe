@@ -1,9 +1,9 @@
-// import React from 'react';
+import { JSX } from 'react';
 import './login-form.css'
 
 import Button from '@src/features/ui/button/button.component.tsx';
 
-export default function LoginForm() {
+export default function LoginForm(): JSX.Element {
   return (
     <section className="login-form">
       <p>Login</p>

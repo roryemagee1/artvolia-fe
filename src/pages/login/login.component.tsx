@@ -1,10 +1,9 @@
-// import React from 'react';
+import { JSX } from 'react';
 import './login.css'
+import { Outlet } from 'react-router-dom';
 
 import LoginHeader from '@src/features/login/login-header/login-header.component.tsx';
-import Page from '@src/features/ui/page/page.component';
-
-import LoginForm from '@src/features/login/login-form/login-form.component.tsx';
+import Page from '@src/features/ui/page/page.component.tsx';
 
 export default function Login() {
   return (
@@ -12,7 +11,7 @@ export default function Login() {
       <LoginHeader />
       <Page>
         <section className="login" >
-          <LoginForm />
+          <Outlet />
         </section>
       </Page>
     </>

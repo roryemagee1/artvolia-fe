@@ -7,6 +7,8 @@ import Posted from '@src/pages/posted/posted.component.tsx';
 
 import Settings from '@src/pages/settings/settings.component.tsx';
 import Login from '@src/pages/login/login.component.tsx';
+import LoginForm from '@src/features/login/login-form/login-form.component.tsx';
+import SignUpForm from '@src/features/login/sign-up-form/sign-up-form.component.tsx';
 
 export default function App(): JSX.Element {
   return (
@@ -16,8 +18,10 @@ export default function App(): JSX.Element {
         <Route path="/posted/:uid/:pid" element={<Posted />}/>
         <Route path="/profile" element={<h1>Profile</h1>}/>
         <Route path="/settings" element={<Settings />}/>
-        <Route path="/login" element={<Login />}/>
-        <Route path="/sign-up" element={<h1>Sign-up</h1>}/>
+        <Route path="/login" element={<Login />}>
+          <Route index element={<LoginForm />} />
+          <Route path="/login/sign-up"element={<SignUpForm />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
