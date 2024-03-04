@@ -12,9 +12,9 @@ export default function PublicHeader(): JSX.Element {
       <nav className="header-nav">
         <Button><h1>Artvolia</h1></Button>
         { 
-          pathname==="/login" ? 
-          <Button onClick={() => navigate(`/`)}><h1>View Public Posts</h1></Button> : 
-          <Button onClick={() => navigate(`/login`)}><h1>Login</h1></Button>
+          pathname==="/public/login" ? 
+          <Button onClick={() => navigate(`/public`)}><h1>View Public Posts</h1></Button> : 
+          <Button onClick={() => navigate(`/public/login`)}><h1>Login</h1></Button>
         }
       </nav>
     </header>
