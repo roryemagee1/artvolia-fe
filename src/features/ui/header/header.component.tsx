@@ -1,8 +1,8 @@
-// import React from 'react';
+import { JSX } from 'react';
 import './header.css';
 
 import Button from "@src/features/ui/button/button.component.tsx"
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <header className="page-header">
       <nav className="header-nav">

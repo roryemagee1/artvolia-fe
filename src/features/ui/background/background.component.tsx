@@ -1,5 +1,4 @@
 import { JSX } from 'react';
-import { Outlet } from 'react-router-dom';
 
 import './museum-background.css' // Use a conditional import here in the future for alternate backgrounds.
 
