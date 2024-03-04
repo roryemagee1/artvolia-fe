@@ -2,6 +2,8 @@ import { JSX } from 'react';
 import './app.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+import Authenticate from '@src/features/authenticate/authenticate.component.tsx';
+
 import PublicLayout from '@src/features/ui/public-layout/public-layout.component.tsx';
 
 import PublicDashboard from '@src/pages/public-dashboard/public-dashboard.component.tsx';
@@ -20,16 +22,19 @@ export default function App(): JSX.Element {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="posted/:uid/:pid" element={<Posted />}/>
-          <Route path="profile" element={<h1>Profile</h1>}/>
-          <Route path="settings" element={<Settings />}/>
+        <Route element={<Authenticate />}>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Dashboard />} />
+            <Route path="posted/:uid/:pid" element={<Posted />} />
+            <Route path="profile" element={<h1>Profile</h1>}/>
+            <Route path="settings" element={<Settings />} />
+            <Route path="public/login" element={<Login />} />
+          </Route>
         </Route>
         
         <Route path="/public" element={<PublicLayout />}>
           <Route index element={<PublicDashboard />} />
-          <Route path="posted/:uid/:pid" element={<PublicPosted />}/>
+          <Route path="posted/:uid/:pid" element={<PublicPosted />} />
           <Route path="profile" element={<h1>PublicProfile</h1>}/>
           <Route path="login" element={<Login />}>
             <Route index element={<LoginForm />} />
