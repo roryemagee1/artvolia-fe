@@ -1,5 +1,5 @@
 import { JSX, CSSProperties } from 'react';
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './feed-tile.css';
 
 import TileNav from '@src/features/feed/tile-nav/tile-nav.component.tsx';
@@ -26,7 +26,7 @@ export default function FeedTile({ userID, postID, imgSrc, imgAlt, height, postT
       <li className="feed-tile">
         <div>
           <TileHeader />
-          <NavLink to={`/posted/${userID}/${postID}`}>
+          <NavLink to={`./posted/${userID}/${postID}`}>
             <img src={imgSrc} alt={imgAlt} style={style?.height ? style : undefined}/>
             <p>{postText}</p>
           </NavLink>
