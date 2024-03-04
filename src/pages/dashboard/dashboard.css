@@ -1,11 +1,12 @@
 .dashboard {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.dashboard > h1 {
+/* .dashboard > h1 {
   position: fixed;
   z-index: 2;
   width: 80%;
   background-color: darkgrey;
-}
+} */
