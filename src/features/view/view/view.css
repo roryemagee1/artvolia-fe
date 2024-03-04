@@ -1,4 +1,8 @@
-/* .view {} */
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
 
 .easel {
   height: 38vw;

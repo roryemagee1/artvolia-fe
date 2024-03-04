@@ -1,0 +1,11 @@
+.public-dashboard {
+  display: flex;
+  justify-content: center;
+}
+
+.public-dashboard > h1 {
+  position: fixed;
+  z-index: 2;
+  width: 80%;
+  background-color: darkgrey;
+}

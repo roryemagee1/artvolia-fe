@@ -1,4 +1,4 @@
-import { JSX, MouseEvent } from 'react';
+import { JSX } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './tile-nav.css';
 

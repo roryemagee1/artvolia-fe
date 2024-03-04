@@ -6,7 +6,6 @@ import Button from "@src/features/ui/button/button.component.tsx"
 export default function PublicHeader(): JSX.Element {
   const navigate = useNavigate();
   const { pathname } = useLocation();
-  console.log(pathname);
 
   return (
     <header className="page-header">
