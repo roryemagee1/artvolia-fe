@@ -5,8 +5,9 @@
   overflow: hidden;
 }
 
-/* .view {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-} */
+/* Needs to be adjusted in Posted, Comments, and View */
+@media (max-width: 900px) {
+  .posted {
+    flex-direction: column;
+  }
+}

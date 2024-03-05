@@ -7,7 +7,8 @@
   display: flex;
   flex-direction: column;
 
-  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
 
   overflow: auto;
 }
@@ -23,10 +24,12 @@
   list-style-type: none;
 }
 
-.view {
-  display: flex;
-  justify-content: center;
-  align-items: start;
+/* Needs to be adjusted in Posted, Comments, and View */
+@media (max-width: 900px) {
+  .comments {
+    width: 100%;
+    margin: 0 0 10vh 0;
+  }
 }
 
 
