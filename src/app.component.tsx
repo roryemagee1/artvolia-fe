@@ -36,7 +36,7 @@ export default function App(): JSX.Element {
         <Route path="/public" element={<PublicLayout />}>
           <Route index element={<PublicDashboard />} />
           <Route path="posted/:uid/:pid" element={<PublicPosted />} />
-          <Route path="profile" element={<h1>PublicProfile</h1>}/>
+          <Route path="profile" element={<Profile />}/>
           <Route path="login" element={<Login />}>
             <Route index element={<LoginForm />} />
             <Route path="sign-up"element={<SignUpForm />} />
