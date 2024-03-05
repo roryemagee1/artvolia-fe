@@ -20,4 +20,6 @@
 .post-box > form > input {
   width: 60vw;
   height: 25px;;
+
+  background-color: white;
 }
