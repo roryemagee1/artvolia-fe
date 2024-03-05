@@ -3,11 +3,11 @@ import './profile-icon.css';
 
 interface ProfileIconProps {
   userID: number;
-  imgSrc: string;
-  imgAlt: string;
+  profileImgSrc: string;
+  profileImgAlt: string;
 }
 
-export default function ProfileIcon({ userID, imgSrc, imgAlt }: ProfileIconProps): JSX.Element {
+export default function ProfileIcon({ userID, profileImgSrc, profileImgAlt }: ProfileIconProps): JSX.Element {
   return (
     <div className="profile-icon">
       <img src="" alt="Profile" />
