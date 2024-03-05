@@ -23,5 +23,11 @@
   list-style-type: none;
 }
 
+.view {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
 
   
