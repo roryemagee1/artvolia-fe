@@ -1,0 +1,8 @@
+.profile-info {
+  width: 60w;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: lightgrey;
+}

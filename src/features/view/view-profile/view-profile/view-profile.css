@@ -1,0 +1,14 @@
+.view-profile {
+  width: 90vw;
+  height: 40vh;
+
+  background-color: darkgrey;
+
+  display: flex;
+}
+
+.view-profile--information {
+  display: flex;
+  flex-direction: column;
+}
+

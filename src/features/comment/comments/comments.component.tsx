@@ -15,8 +15,8 @@ export default function Comments(): JSX.Element {
           commentID={1}
           likes={12}
           commentText="This is a comment."
-          imgSrc=""
-          imgAlt="No Picture"
+          profileImgSrc=""
+          profileImgAlt="No Picture"
           commentReplies={[]}
         />
       )

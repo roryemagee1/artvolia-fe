@@ -1,4 +1,4 @@
-/* .login {
+.login {
   height: 90vh;
   width: 100vw;
 
@@ -15,10 +15,4 @@
   .login {
     background-size: 100vw;
   }
-} */
-
-.login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

@@ -9,27 +9,27 @@ interface CommentBoxProps {
   userID: number;
   postID: number;
   commentID: number;
-  imgSrc: string;
-  imgAlt: string;
   likes: number;
+  profileImgSrc: string;
+  profileImgAlt: string;
   commentText: string;
   commentReplies: [];
 }
 
-export default function CommentBox({ userID, postID, commentID, imgSrc, imgAlt, likes, commentText, commentReplies }: CommentBoxProps): JSX.Element {
+export default function CommentBox({ userID, /* postID, commentID,*/ likes, profileImgSrc, profileImgAlt, commentText, commentReplies }: CommentBoxProps): JSX.Element {
   return (
       <li className="comment-box">
         <ProfileIcon 
           userID={userID}
-          imgSrc={imgSrc}
-          imgAlt={imgAlt}
+          profileImgSrc={profileImgSrc}
+          profileImgAlt={profileImgAlt}
         />
         <div>
             <p>{commentText}</p>
         </div>
         <CommentActions 
-          postID={postID}
-          commentID={commentID}
+          // postID={postID}
+          // commentID={commentID}
           likes={likes}
           commentReplies={commentReplies}
         />
