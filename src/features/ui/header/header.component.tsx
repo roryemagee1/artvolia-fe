@@ -1,5 +1,6 @@
 import { JSX } from 'react';
 import './header.css';
+import { NavLink } from 'react-router-dom';
 
 import ArtvoliaNavTitle from '@src/features/ui/artvolia-nav-title/artvolia-nav-title.component.tsx';
 import Logout from '@src/features/ui/logout/logout.component.tsx'
@@ -12,7 +13,9 @@ export default function Header(): JSX.Element {
         <div>
           <Logout />
           <Button><h1>Notifications</h1></Button>
-          <Button><h1>Settings</h1></Button>
+          <NavLink to="/settings">
+            <h1>Settings</h1>
+          </NavLink>
         </div>
       </nav>
     </header>
