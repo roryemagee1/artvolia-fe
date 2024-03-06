@@ -2,22 +2,22 @@ import { JSX } from 'react';
 import './app.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Authenticate from '@src/features/authenticate/authenticate.component.tsx';
+import Authenticate from '@src/features/authenticate/authenticate.component';
 
-import Layout from '@src/features/ui/layout/layout.component.tsx';
+import Layout from '@src/features/ui/layout/layout.component';
 
-import Dashboard from '@src/pages/dashboard/dashboard.component.tsx';
-import Posted from '@src/pages/posted/posted.component.tsx';
-import Profile from '@src/pages/profile/profile.component.tsx';
-import Settings from '@src/pages/settings/settings.component.tsx';
+import Dashboard from '@src/pages/dashboard/dashboard.component';
+import Posted from '@src/pages/posted/posted.component';
+import Profile from '@src/pages/profile/profile.component';
+import Settings from '@src/pages/settings/settings.component';
 
-import PublicLayout from '@src/features/ui/public-layout/public-layout.component.tsx';
+import PublicLayout from '@src/features/ui/public-layout/public-layout.component';
 
-import PublicDashboard from '@src/pages/public-dashboard/public-dashboard.component.tsx';
-import PublicPosted from '@src/pages/public-posted/public-posted.component.tsx';
-import Login from '@src/pages/login/login.component.tsx';
-import LoginForm from '@src/features/login/login-form/login-form.component.tsx';
-import SignUpForm from '@src/features/login/sign-up-form/sign-up-form.component.tsx';
+import PublicDashboard from '@src/pages/public-dashboard/public-dashboard.component';
+import PublicPosted from '@src/pages/public-posted/public-posted.component';
+import Login from '@src/pages/login/login.component';
+import LoginForm from '@src/features/login/login-form/login-form.component';
+import SignUpForm from '@src/features/login/sign-up-form/sign-up-form.component';
 
 export default function App(): JSX.Element {
   return (
