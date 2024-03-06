@@ -1,0 +1,27 @@
+.view-posted {
+  height: 38vw;
+  width: 100%;
+}
+
+.easel {
+  height: 38vw;
+  width: 100%;
+  min-height: 440px;
+  min-width: 400px;
+  max-height: 560px;
+
+  background-image: url('@src/assets/easel2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 110%;
+
+  padding: 100px 12.5% 250px 10%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.easel > img {
+  height: 33vw;
+  max-height: 500px;
+}

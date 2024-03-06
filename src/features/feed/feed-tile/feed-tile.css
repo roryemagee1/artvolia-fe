@@ -1,0 +1,47 @@
+p {
+  color: black;
+  font-weight: bold;
+}
+
+.feed-tile {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.feed-tile > div {
+  background-color: white;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+
+.feed-tile > div > a {
+  text-decoration: none;
+}
+
+.feed-tile > div > a > img {
+  max-height: 300px;
+}
+
+@media (width < 1440px) {
+  .feed-tile > div > a >img {
+    max-height: 25vw;
+  }
+}
+
+
+@media (width < 1080px) {
+  .feed-tile > div > a > img {
+    max-height: 50vw;
+    min-height: 240px;
+  }
+}
+
+
+
+
+

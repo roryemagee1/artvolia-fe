@@ -1,0 +1,13 @@
+.tile-nav {
+  max-height: 100px;
+  width: 100%;
+  background-color: white;
+}
+
+.tile-nav > button {
+  margin: 0 10px;
+}
+
+h3 {
+  color: black;
+}

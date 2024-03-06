@@ -1,0 +1,25 @@
+.post-box {
+  width: 100%;
+
+  background-color: grey;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-box > form {
+  height: 10vh;
+  width: 80vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.post-box > form > input {
+  width: 60vw;
+  height: 25px;;
+
+  background-color: white;
+}

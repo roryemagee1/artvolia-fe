@@ -1,0 +1,13 @@
+.posted {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+/* Needs to be adjusted in Posted, Comments, and View */
+@media (max-width: 900px) {
+  .posted {
+    flex-direction: column;
+  }
+}

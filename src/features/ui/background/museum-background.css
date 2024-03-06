@@ -1,0 +1,22 @@
+.background {
+  height: 90vh;
+  width: 100vw;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: start; */
+
+  background-image: url('@src/assets/art-exhibit.jpeg');
+  background-repeat: no-repeat;
+  background-size: 170vh;
+}
+
+@media (min-width: 1440px) {
+  .background {
+    background-size: 100vw;
+  }
+}

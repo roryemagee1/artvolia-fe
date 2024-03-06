@@ -1,0 +1,36 @@
+.comments {
+  height: 80vh;
+  width: 540px;
+
+  background-color: rgba(255, 192, 203, 50%);
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding: 10px;
+
+  overflow: auto;
+}
+
+.comments > ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 0;
+  padding: 10px;
+
+  list-style-type: none;
+}
+
+/* Needs to be adjusted in Posted, Comments, and View */
+@media (max-width: 900px) {
+  .comments {
+    width: 100%;
+    margin: 0 0 10vh 0;
+  }
+}
+
+
+  

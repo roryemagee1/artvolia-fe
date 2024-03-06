@@ -1,0 +1,31 @@
+.feed-search {
+  position: fixed;
+  z-index: 2;
+  top: 10vh;
+  left: 10vw;
+  width: 80vw;;
+  background-color: darkgrey;
+
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.feed-search > div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.search {
+  width: 60vw;
+  background-color: white;
+}
+
+.feed-search > div > form,div {
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  padding: 0 10px;
+}

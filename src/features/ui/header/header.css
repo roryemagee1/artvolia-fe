@@ -1,0 +1,23 @@
+.page-header {
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+
+  background-color: grey;
+}
+
+.header-nav {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > * {
+  margin: 10px;
+}
